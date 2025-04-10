@@ -1,0 +1,55 @@
+.menu {
+    background: rgb(250, 93, 2);
+    width: 100px;
+    opacity: 0.3;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .menu .fas{
+    transition: transform .2s;
+}
+
+.menu p {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-lists {
+  background: rgb(252, 4, 4);
+  width: 200px;
+  padding: 8px;
+  opacity: 0.3;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.social-lists li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: padding 0.2s linear;
+}
+
+.social-lists li:hover {
+  background: blue;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.social-lists li .fab {
+  margin: 0 10px;
+}
+
+.rotate .fas {
+  transform: rotate(180deg);
+}
+
+.hide {
+  visibility: hidden;
+}

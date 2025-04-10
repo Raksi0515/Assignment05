@@ -49,3 +49,72 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+//uk page
+
+function goToPage() {
+    window.location.href ="uk.html";
+  }
+
+
+  //submite button
+
+  function showAlert() {
+    alert("submited!");
+  }
+
+
+//button change
+  const menuEl = document.querySelector(".menu");
+const menuTextEl = document.querySelector(".menu p");
+const socialListsEl = document.querySelector(".social-lists");
+const liEls = document.querySelectorAll(".social-lists li");
+
+menuEl.addEventListener("click", () => {
+  socialListsEl.classList.toggle("hide");
+  menuEl.classList.toggle("rotate");
+});
+
+liEls.forEach((liEl) => {
+  liEl.addEventListener("click", () => {
+    menuTextEl.innerHTML = liEl.innerHTML;
+    socialListsEl.classList.add("hide");
+    menuEl.classList.toggle("rotate");
+  });
+});
+
+
+
+
+
+  
+    // Simple JavaScript for hover effects
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select elements
+        const images = document.querySelectorAll('.review-image');
+        const text = document.querySelector('.review-text');
+
+        // Add hover effects to images
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.transform = 'scale(1.1)';
+                image.style.transition = 'transform 0.3s ease';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+
+        // Add hover effect to text
+        text.addEventListener('mouseover', () => {
+            text.style.color = '#e75480';
+            text.style.transition = 'color 0.3s ease';
+        });
+
+        text.addEventListener('mouseout', () => {
+            text.style.color = 'inherit';
+        });
+    });
+
+  
